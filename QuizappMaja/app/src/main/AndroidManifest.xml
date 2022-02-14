@@ -10,7 +10,37 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.QuizappMaja">
         <activity
-            android:name=".MainActivity"
+            android:name=".HighscoresActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StartRoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoundFinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseModeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CodeCheckActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateAccountActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
