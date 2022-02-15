@@ -7,16 +7,13 @@
         <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/drawable/app_icon_background.xml" value="0.3425" />
         <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_choose_category.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_code_check.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_login_activitytest.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/mipmap-anydpi-v26/app_icon.xml" value="0.3425" />
-        <entry key="..\:/Users/marko/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/mipmap-anydpi-v26/app_icon_round.xml" value="0.3475" />
+        <entry key="..\:/Users/stud/Documents/GitHub/Quizapp-Team-Maja-AndroidApp/QuizappMaja/app/src/main/res/layout/activity_login.xml" value="0.264" />
       </map>
     </option>
-  </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable/app_icon_background.xml" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
