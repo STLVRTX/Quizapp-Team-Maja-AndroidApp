@@ -15,10 +15,10 @@
         android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
+        app:layout_constraintVertical_bias="0.064"
         app:srcCompat="@mipmap/app_icon_foreground" />
 
     <Button
@@ -27,41 +27,45 @@
         android:layout_height="67dp"
         android:fontFamily="sans-serif"
         android:text="@string/login_confirm"
+        android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.885" />
+        app:layout_constraintVertical_bias="0.831" />
 
     <EditText
         android:id="@+id/emailTInput"
         android:layout_width="333dp"
         android:layout_height="73dp"
         android:ems="10"
+        android:hint="@string/prompt_email"
         android:inputType="textPersonName"
-        android:text="E-Mail"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.465" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="333dp"
         android:layout_height="72dp"
         android:ems="10"
+        android:hint="@string/prompt_password"
         android:inputType="textPassword"
-        android:text="Password"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/confirmBtn"
         app:layout_constraintEnd_toEndOf="@+id/emailTInput"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/emailTInput"
         app:layout_constraintTop_toBottomOf="@+id/emailTInput"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintVertical_bias="0.299" />
 
     <TextView
         android:id="@+id/textView2"
