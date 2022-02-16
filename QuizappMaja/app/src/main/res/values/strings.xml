@@ -9,8 +9,9 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="login_confirm">Confirm</string>
+    <string name="login_confirm">Login</string>
     <string name="login_forgor">Forgot password? Click here</string>
     <string name="prompt_passwordAgain">Repeat password</string>
     <string name="createAcc_confirm">Create account</string>
+    <string name="prompt_email">Email</string>
 </resources>

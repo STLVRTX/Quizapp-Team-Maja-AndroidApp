@@ -22,7 +22,7 @@
         app:srcCompat="@mipmap/app_icon_foreground" />
 
     <Button
-        android:id="@+id/creaccConfirm"
+        android:id="@+id/creacc_btn_confirm"
         android:layout_width="292dp"
         android:layout_height="67dp"
         android:fontFamily="sans-serif"
@@ -34,10 +34,25 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.893" />
+        app:layout_constraintVertical_bias="0.923" />
 
     <EditText
-        android:id="@+id/creaccTinEmail"
+        android:id="@+id/creacc_input_username"
+        android:layout_width="333dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:hint="@string/prompt_username"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/creacc_input_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.964" />
+
+    <EditText
+        android:id="@+id/creacc_input_email"
         android:layout_width="333dp"
         android:layout_height="73dp"
         android:ems="10"
@@ -46,13 +61,14 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/creacc_input_username"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creacc_input_username"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.419" />
+        app:layout_constraintVertical_bias="0.525" />
 
     <EditText
-        android:id="@+id/creaccTinPassword"
+        android:id="@+id/creacc_input_password"
         android:layout_width="333dp"
         android:layout_height="72dp"
         android:ems="10"
@@ -60,15 +76,15 @@
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/creaccConfirm"
-        app:layout_constraintEnd_toEndOf="@+id/creaccTinEmail"
+        app:layout_constraintBottom_toTopOf="@+id/creacc_btn_confirm"
+        app:layout_constraintEnd_toEndOf="@+id/creacc_input_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/creaccTinEmail"
-        app:layout_constraintTop_toBottomOf="@+id/creaccTinEmail"
-        app:layout_constraintVertical_bias="0.129" />
+        app:layout_constraintStart_toStartOf="@+id/creacc_input_email"
+        app:layout_constraintTop_toBottomOf="@+id/creacc_input_email"
+        app:layout_constraintVertical_bias="0.114" />
 
     <EditText
-        android:id="@+id/creAccTinRepPw"
+        android:id="@+id/creacc_input_reppassword"
         android:layout_width="333dp"
         android:layout_height="72dp"
         android:ems="10"
@@ -76,11 +92,11 @@
         android:inputType="textPassword"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/creaccConfirm"
-        app:layout_constraintEnd_toEndOf="@+id/creaccTinEmail"
+        app:layout_constraintBottom_toTopOf="@+id/creacc_btn_confirm"
+        app:layout_constraintEnd_toEndOf="@+id/creacc_input_email"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/creaccTinEmail"
-        app:layout_constraintTop_toBottomOf="@+id/creaccTinPassword"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintStart_toStartOf="@+id/creacc_input_email"
+        app:layout_constraintTop_toBottomOf="@+id/creacc_input_password"
+        app:layout_constraintVertical_bias="0.416" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
