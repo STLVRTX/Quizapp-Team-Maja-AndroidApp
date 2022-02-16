@@ -7,4 +7,82 @@
     android:background="@color/background"
     tools:context=".ChooseCategoryActivity">
 
+    <TextView
+        android:id="@+id/chocat_text_status"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/background_01dp"
+        android:backgroundTintMode="multiply"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/chocat_text_choose"
+        android:layout_width="344dp"
+        android:layout_height="82dp"
+        android:background="@color/background_01dp"
+        android:backgroundTintMode="multiply"
+        android:gravity="center"
+        android:text="@string/chocat_choose"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chocat_text_status"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <Button
+        android:id="@+id/chocat_category1"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/chocat_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chocat_text_choose"
+        app:layout_constraintVertical_bias="0.196"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <Button
+        android:id="@+id/chocat_category2"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/chocat_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chocat_category1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/chocat_category1"
+        app:layout_constraintTop_toBottomOf="@+id/chocat_category1"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <Button
+        android:id="@+id/chocat_category3"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/chocat_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chocat_category1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/chocat_category1"
+        app:layout_constraintTop_toBottomOf="@+id/chocat_category2"
+        app:layout_constraintVertical_bias="0.209" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

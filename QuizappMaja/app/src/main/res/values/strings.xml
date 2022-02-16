@@ -23,4 +23,18 @@
     <string name="chomode_multi">Multiplayer</string>
     <string name="startround_start">Start game</string>
     <string name="prompt_back">Back</string>
+    <string name="question_placeholder">answer</string>
+    <string name="chocat_choose">Choose a category:</string>
+    <string name="chocat_placeholder">category</string>
+    <string name="question_next">Next question</string>
+    <string name="question_finishround">Finish round</string>
+    <string name="roundfin_finish">Round finished!</string>
+    <string name="roundfin_choose">Choose next category</string>
+    <string name="roundfin_quit">Exit game</string>
+    <string name="gamefin_finish">Game finished!</string>
+    <string name="gamefin_user_placeholder">user</string>
+    <string name="gamefin_points">Points:</string>
+    <string name="gamefin_result_placeholder">points</string>
+    <string name="gamefin_restart">Play again</string>
+    <string name="gamefin_menu">Main menu</string>
 </resources>

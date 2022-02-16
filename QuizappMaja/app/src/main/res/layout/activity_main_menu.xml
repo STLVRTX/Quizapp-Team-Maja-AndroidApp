@@ -67,7 +67,7 @@
 
     <Button
         android:id="@+id/menu_btn_logout"
-        android:layout_width="135dp"
+        android:layout_width="wrap_content"
         android:layout_height="60dp"
         android:fontFamily="sans-serif"
         android:text="@string/menu_logout"

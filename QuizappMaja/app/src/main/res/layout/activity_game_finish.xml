@@ -4,6 +4,117 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".GameFinishActivity">
+
+    <TextView
+        android:id="@+id/gamefin_text_finish"
+        android:layout_width="290dp"
+        android:layout_height="139dp"
+        android:background="@color/background_04dp"
+        android:gravity="center"
+        android:text="@string/gamefin_finish"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <TextView
+        android:id="@+id/gamefin_text_userresult"
+        android:layout_width="176dp"
+        android:layout_height="44dp"
+        android:background="@color/background_04dp"
+        android:gravity="center"
+        android:text="@string/gamefin_user_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <TextView
+        android:id="@+id/gamefin_text_user"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:background="@color/background_01dp"
+        android:gravity="center"
+        android:text="@string/gamefin_user_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gamefin_text_userresult"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/gamefin_text_pointsresult"
+        android:layout_width="176dp"
+        android:layout_height="44dp"
+        android:background="@color/background_04dp"
+        android:gravity="center"
+        android:text="@string/gamefin_result_placeholder"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.579" />
+
+    <TextView
+        android:id="@+id/gamefin_text_points"
+        android:layout_width="113dp"
+        android:layout_height="43dp"
+        android:background="@color/background_01dp"
+        android:gravity="center"
+        android:text="@string/gamefin_points"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/gamefin_text_userresult"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <Button
+        android:id="@+id/gamefin_btn_restart"
+        android:layout_width="200dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/gamefin_restart"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <Button
+        android:id="@+id/gamefin_btn_menu"
+        android:layout_width="200dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/gamefin_menu"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamefin_btn_restart"
+        app:layout_constraintVertical_bias="0.179" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
