@@ -4,6 +4,91 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainMenuActivity">
 
+    <ImageView
+        android:id="@+id/menu_icon"
+        android:layout_width="900dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="-150dp"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@mipmap/app_icon_foreground" />
+
+    <Button
+        android:id="@+id/menu_btn_play"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/menu_play"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <Button
+        android:id="@+id/menu_btn_highscores"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/menu_highscores"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_quit"
+        app:layout_constraintEnd_toEndOf="@+id/menu_btn_play"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/menu_btn_play"
+        app:layout_constraintTop_toBottomOf="@+id/menu_btn_play" />
+
+    <Button
+        android:id="@+id/menu_btn_quit"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/menu_quit"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/menu_btn_logout"
+        app:layout_constraintEnd_toEndOf="@+id/menu_btn_highscores"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="@+id/menu_btn_highscores"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <Button
+        android:id="@+id/menu_btn_logout"
+        android:layout_width="135dp"
+        android:layout_height="60dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/menu_logout"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/menu_btn_quit"
+        app:layout_constraintStart_toStartOf="@+id/menu_btn_quit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897" />
+
+    <TextView
+        android:id="@+id/menu_text_statuslogin"
+        android:layout_width="278dp"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/menu_statuslogin"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/menu_btn_logout"
+        app:layout_constraintStart_toStartOf="@+id/menu_btn_logout"
+        app:layout_constraintTop_toBottomOf="@+id/menu_btn_logout"
+        app:layout_constraintVertical_bias="0.741" />
 </androidx.constraintlayout.widget.ConstraintLayout>
