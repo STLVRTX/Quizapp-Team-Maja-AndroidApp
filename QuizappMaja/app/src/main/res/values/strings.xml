@@ -11,4 +11,6 @@
     <string name="login_failed">"Login failed"</string>
     <string name="login_confirm">Confirm</string>
     <string name="login_forgor">Forgot password? Click here</string>
+    <string name="prompt_passwordAgain">Repeat password</string>
+    <string name="createAcc_confirm">Create account</string>
 </resources>

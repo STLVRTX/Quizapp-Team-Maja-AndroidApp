@@ -4,4 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateAccountActivity"/>
+    android:background="@color/background"
+    tools:context=".CreateAccountActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="900dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="-150dp"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@mipmap/app_icon_foreground" />
+
+    <Button
+        android:id="@+id/creaccConfirm"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/createAcc_confirm"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.893" />
+
+    <EditText
+        android:id="@+id/creaccTinEmail"
+        android:layout_width="333dp"
+        android:layout_height="73dp"
+        android:ems="10"
+        android:hint="@string/prompt_email"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <EditText
+        android:id="@+id/creaccTinPassword"
+        android:layout_width="333dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="@string/prompt_password"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/creaccConfirm"
+        app:layout_constraintEnd_toEndOf="@+id/creaccTinEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creaccTinEmail"
+        app:layout_constraintTop_toBottomOf="@+id/creaccTinEmail"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <EditText
+        android:id="@+id/creAccTinRepPw"
+        android:layout_width="333dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:hint="@string/prompt_passwordAgain"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/creaccConfirm"
+        app:layout_constraintEnd_toEndOf="@+id/creaccTinEmail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/creaccTinEmail"
+        app:layout_constraintTop_toBottomOf="@+id/creaccTinPassword"
+        app:layout_constraintVertical_bias="0.343" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
