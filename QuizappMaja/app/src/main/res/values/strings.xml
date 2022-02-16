@@ -14,4 +14,13 @@
     <string name="prompt_passwordAgain">Repeat password</string>
     <string name="createAcc_confirm">Create account</string>
     <string name="prompt_email">Email</string>
+    <string name="menu_statuslogin">Logged in as:</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_quit">Quit</string>
+    <string name="menu_highscores">Highscores</string>
+    <string name="menu_play">Play</string>
+    <string name="chomode_single">Singleplayer</string>
+    <string name="chomode_multi">Multiplayer</string>
+    <string name="startround_start">Start game</string>
+    <string name="prompt_back">Back</string>
 </resources>

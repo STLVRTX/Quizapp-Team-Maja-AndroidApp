@@ -4,6 +4,64 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ChooseModeActivity">
 
+    <ImageView
+        android:id="@+id/chomode_icon"
+        android:layout_width="900dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="-150dp"
+        android:cropToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.064"
+        app:srcCompat="@mipmap/app_icon_foreground" />
+
+    <Button
+        android:id="@+id/chomode_singleplayer"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/chomode_single"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:id="@+id/chomode_multiplayer"
+        android:layout_width="292dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/chomode_multi"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chomode_singleplayer"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/chomode_singleplayer"
+        app:layout_constraintTop_toBottomOf="@+id/chomode_singleplayer"
+        app:layout_constraintVertical_bias="0.102" />
+
+    <Button
+        android:id="@+id/chomode_back"
+        android:layout_width="250dp"
+        android:layout_height="67dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/prompt_back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/chomode_singleplayer"
+        app:layout_constraintStart_toStartOf="@+id/chomode_singleplayer"
+        app:layout_constraintTop_toBottomOf="@+id/chomode_singleplayer"
+        app:layout_constraintVertical_bias="0.734" />
 </androidx.constraintlayout.widget.ConstraintLayout>
