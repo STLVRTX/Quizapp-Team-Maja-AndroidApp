@@ -2,11 +2,13 @@ package com.boi.quizappmaja;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.DefaultRetryPolicy;
 import com.android.volley.Request;
@@ -30,14 +32,13 @@ public class LoginActivity extends AppCompatActivity {
         EditText usernameInput = findViewById(R.id.login_input_username);
         EditText passwordInput = findViewById(R.id.login_input_password);
         Button loginButton = findViewById(R.id.login_btn_confirm);
-        TextView test = findViewById(R.id.testText);
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "http://130.162.39.221/QA/qa_php/index.php/accounts/" + usernameInput.getText().toString();
+                String url = "http://130.162.39.221/QA/qa_php/index.php/accounts/" + usernameInput.getText().toString() + "/login=true";
 
                 JsonArrayRequest
                         jsonArrayRequest
@@ -48,16 +49,17 @@ public class LoginActivity extends AppCompatActivity {
                         new Response.Listener<JSONArray>() {
                             @Override
                             public void onResponse(JSONArray response) {
-                                test.setText(response.toString());
                                 try {
                                     JSONObject user = response.getJSONObject(0);
 
-                                    String username = user.getString("USERNAME");
+                                    String inputPW = passwordInput.getText().toString();
                                     String password = user.getString("PASSWORD");
 
-                                    if(passwordInput.getText().toString() == password) {
-                                        //success
-                                    }
+                                        if(inputPW.equals(password)){
+                                            Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
+                                            Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
+                                            startActivity(intent);
+                                        }
                                 }
                                 catch(JSONException e){
                                 }
