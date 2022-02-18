@@ -15,6 +15,8 @@ import com.android.volley.toolbox.Volley;
 
 public class StartRoundActivity extends AppCompatActivity {
 
+    public static String user;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,16 +25,20 @@ public class StartRoundActivity extends AppCompatActivity {
         Button startButton = findViewById(R.id.startround_start);
         Button backButton = findViewById(R.id.startround_back);
         RequestQueue requestQueue = Volley.newRequestQueue(this);
+        String user = getIntent().getStringExtra(ChooseModeActivity.user);
+
+        Toast.makeText(getApplicationContext(), user, Toast.LENGTH_SHORT).show();
 
         startButton.setOnClickListener(view -> {
-            String url = "http://130.162.39.221/QA/qa_php/index.php/accounts/" + MainMenuActivity.user + "/ingame=true";
+            String url = "http://130.162.39.221/QA/qa_php/index.php/accounts/" + user + "/ingame=true";
             JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(
                     Request.Method.GET,
                     url,
                     null,
                     response -> {
-                        Intent i3 = new Intent(StartRoundActivity.this, ChooseCategoryActivity.class);
-                        startActivity(i3); },
+                        Intent intent = new Intent(StartRoundActivity.this, ChooseCategoryActivity.class);
+                        intent.putExtra(this.user, user);
+                        startActivity(intent); },
                     error ->
                             Toast.makeText(getApplicationContext(), "Error", Toast.LENGTH_SHORT).show());
             jsonArrayRequest.setRetryPolicy(new DefaultRetryPolicy(
@@ -43,8 +49,7 @@ public class StartRoundActivity extends AppCompatActivity {
         });
 
         backButton.setOnClickListener(view -> {
-            Intent intent = new Intent(StartRoundActivity.this, ChooseModeActivity.class);
-            startActivity(intent);
+            finish();
         });
     }
 }

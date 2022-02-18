@@ -38,17 +38,19 @@ public class MainMenuActivity extends AppCompatActivity {
         Intent intent = getIntent();
         RequestQueue requestQueue = Volley.newRequestQueue(this);
 
-        user = intent.getStringExtra(LoginActivity.userExtra);
+        String user = intent.getStringExtra(LoginActivity.userExtra);
         String logUser = "Logged in as: " + user;
         statusText.setText(logUser);
 
         playButton.setOnClickListener(view -> {
             Intent i1 = new Intent(this, ChooseModeActivity.class);
+            i1.putExtra(this.user, user);
             startActivity(i1);
         });
 
         highscoresButton.setOnClickListener(view -> {
             Intent i2 = new Intent(this, HighscoresActivity.class);
+            i2.putExtra(this.user, user);
             startActivity(i2);
         });
 
