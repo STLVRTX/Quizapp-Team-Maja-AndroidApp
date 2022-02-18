@@ -2,7 +2,9 @@ package com.boi.quizappmaja;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +31,15 @@ public class CreateAccountActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Check ob lokaler Benutzer schon einen Account hat
+        SharedPreferences userPref = getSharedPreferences("userAcc", Context.MODE_PRIVATE);
+        String userAcc = userPref.getString("userAcc", "");
+        if(userAcc.equals("true")){
+            Intent i1 = new Intent(CreateAccountActivity.this, LoginActivity.class);
+            startActivity(i1);
+            return;
+        }
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_createaccount);
 
@@ -73,8 +84,15 @@ public class CreateAccountActivity extends AppCompatActivity {
                         }
                     };
                     requestQueue.add(postRequest);
+
+                    //Speichern, dass lokaler Benutzer einen Useraccount hat
+                    SharedPreferences userPref = getSharedPreferences("userAcc", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor edit = userPref.edit();
+                    edit.putString("userAcc", "true");
+                    edit.apply();
+
                     Toast.makeText(getApplicationContext(), "Account Successfully Created", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(CreateAccountActivity.this, MainMenuActivity.class);
+                    Intent intent = new Intent(CreateAccountActivity.this, LoginActivity.class);
                     startActivity(intent);
                 }
                 else {
@@ -83,4 +101,5 @@ public class CreateAccountActivity extends AppCompatActivity {
             }
         });
     }
+
 }

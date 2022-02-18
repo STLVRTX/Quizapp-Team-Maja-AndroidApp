@@ -24,6 +24,8 @@ import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
 
+    public static String userExtra;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                                         if(inputPW.equals(password)){
                                             Toast.makeText(getApplicationContext(), "Login Successful", Toast.LENGTH_SHORT).show();
                                             Intent intent = new Intent(LoginActivity.this, MainMenuActivity.class);
+                                            intent.putExtra(userExtra, usernameInput.getText().toString());
                                             startActivity(intent);
                                         }
                                 }
@@ -79,4 +82,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() { }
 }

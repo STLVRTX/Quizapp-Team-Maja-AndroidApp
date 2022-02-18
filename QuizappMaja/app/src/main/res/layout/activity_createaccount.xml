@@ -34,69 +34,61 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.923" />
+        app:layout_constraintVertical_bias="0.926" />
 
-    <EditText
-        android:id="@+id/creacc_input_username"
-        android:layout_width="333dp"
-        android:layout_height="73dp"
-        android:ems="10"
-        android:hint="@string/prompt_username"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/creacc_input_email"
+    <LinearLayout
+        android:layout_width="335dp"
+        android:layout_height="302dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/creacc_btn_confirm"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.964" />
+        app:layout_constraintVertical_bias="0.88">
 
-    <EditText
-        android:id="@+id/creacc_input_email"
-        android:layout_width="333dp"
-        android:layout_height="73dp"
-        android:ems="10"
-        android:hint="@string/prompt_email"
-        android:inputType="textPersonName"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/creacc_input_username"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/creacc_input_username"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        <EditText
+            android:id="@+id/creacc_input_email"
+            android:layout_width="333dp"
+            android:layout_height="73dp"
+            android:ems="10"
+            android:hint="@string/prompt_email"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
 
-    <EditText
-        android:id="@+id/creacc_input_password"
-        android:layout_width="333dp"
-        android:layout_height="72dp"
-        android:ems="10"
-        android:hint="@string/prompt_password"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/creacc_btn_confirm"
-        app:layout_constraintEnd_toEndOf="@+id/creacc_input_email"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/creacc_input_email"
-        app:layout_constraintTop_toBottomOf="@+id/creacc_input_email"
-        app:layout_constraintVertical_bias="0.114" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
 
-    <EditText
-        android:id="@+id/creacc_input_reppassword"
-        android:layout_width="333dp"
-        android:layout_height="72dp"
-        android:ems="10"
-        android:hint="@string/prompt_passwordAgain"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/creacc_btn_confirm"
-        app:layout_constraintEnd_toEndOf="@+id/creacc_input_email"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/creacc_input_email"
-        app:layout_constraintTop_toBottomOf="@+id/creacc_input_password"
-        app:layout_constraintVertical_bias="0.416" />
+        <EditText
+            android:id="@+id/creacc_input_username"
+            android:layout_width="333dp"
+            android:layout_height="73dp"
+            android:ems="10"
+            android:hint="@string/prompt_username"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/creacc_input_password"
+            android:layout_width="333dp"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:hint="@string/prompt_password"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/creacc_input_reppassword"
+            android:layout_width="333dp"
+            android:layout_height="72dp"
+            android:ems="10"
+            android:hint="@string/prompt_passwordAgain"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
