@@ -85,6 +85,7 @@ public class CreateAccountActivity extends AppCompatActivity {
                     };
                     requestQueue.add(postRequest);
 
+
                     //Speichern, dass lokaler Benutzer einen Useraccount hat
                     SharedPreferences userPref = getSharedPreferences("userAcc", Context.MODE_PRIVATE);
                     SharedPreferences.Editor edit = userPref.edit();
